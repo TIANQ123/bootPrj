@@ -1,0 +1,44 @@
+# IDEA
+.idea
+*.iml
+*.iws
+*.ipr
+out/
+
+# Maven
+mvnw*
+.mvn
+mvn/
+*.log
+log/
+
+# Spring Boot
+*/target
+/target/
+target/
+/build/
+/classes/
+/*.jar
+!application*.jar
+
+spring.pid
+
+# STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
