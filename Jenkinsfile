@@ -10,7 +10,7 @@ pipeline {
         stage('拉取代码') {
             steps {
                 echo '开始拉取代码'
-                git credentialsId: '21ccf121-e7b8-41bc-bc04-9ce1481075ae', url: 'https://github.com/TIANQ123/bootPrj.git'
+                git credentialsId: '1c527984-18ae-458a-b3fd-38c6cc15be4c', url: 'https://github.com/TIANQ123/bootPrj.git'
                 echo '拉取成功'
             }
         }
