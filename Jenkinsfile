@@ -17,7 +17,7 @@ pipeline {
         
         stage('执行构建') {
             steps{
-                sh '开始构建'
+                echo '开始构建'
                 sh 'mvn --version'
                 sh 'mvn clean package'
                 echo '构建成功'
