@@ -18,9 +18,8 @@ pipeline {
         stage('执行构建') {
             steps{
                 sh '开始构建'
-                sh 'pwd'
-                sh '/var/maven_home/bin/mvn --version'
-                sh '/var/maven_home/bin/mvn clean package'
+                sh 'mvn --version'
+                sh 'mvn clean package'
                 echo '构建成功'
                 echo '进入jar包目录并且启动java服务'
                 sh 'cd target && java -jar bootPrj-1.0-SNAPSHOT.jar'
