@@ -22,7 +22,7 @@ pipeline {
                 sh 'mvn clean package'
                 echo '构建成功'
                 echo '进入jar包目录并且启动java服务'
-                sh 'cd target && java -jar bootPrj-1.0-SNAPSHOT.jar'
+                sh 'cd target && nohup java -jar bootPrj-1.0-SNAPSHOT.jar &'
                 // echo '启动java服务'
                 // bat 'java -jar bootPrj-1.0-SNAPSHOT.jar'
                 sh '启动成功'
