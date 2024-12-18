@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-        MAVEN_HOME = 'E:/maven/apache-maven-3.6.3'  // 根据你的系统配置 Maven 的安装路径
-        JAVA_HOME = 'E:/Java/jdk1.8.0_281' // 根据你系统的 JDK 路径进行调整
+        MAVEN_HOME = '/var/maven_home'  // 根据你的系统配置 Maven 的安装路径
+        JAVA_HOME = '/opt/java/openjdk' // 根据你系统的 JDK 路径进行调整
         PATH = "${MAVEN_HOME}/bin:${JAVA_HOME}/bin:${env.PATH}"
     }
 
