@@ -25,7 +25,7 @@ pipeline {
                 sh 'cd target && nohup java -jar bootPrj-1.0-SNAPSHOT.jar &'
                 // echo '启动java服务'
                 // bat 'java -jar bootPrj-1.0-SNAPSHOT.jar'
-                sh '启动成功'
+                echo '启动成功'
             }
         }
         
